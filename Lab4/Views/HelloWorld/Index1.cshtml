@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Index1";
+}
+
+<h2>Index1</h2>
+
+<p>@DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")</p>
+
+@for (var i = 10; i < 21; i++)
+{
+    <p>Line @i</p>
+}
+
+@{
+    var myMessage = "Hello World";
+}
+<p>@myMessage</p>
+
+<hr />
+<h3>Content from Index.cshtml:</h3>
+@RenderPage("Index.cshtml")
